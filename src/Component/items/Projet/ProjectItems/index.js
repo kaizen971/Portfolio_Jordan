@@ -16,7 +16,7 @@ export default function ProjectItems(props) {
 <div id="calque" style={{position:"absolute",	width: 400,
 	height: 300,opacity:0,borderRadius:20,display:"flex",flexDirection:"column"}} >
     <p style={{color:"white",marginRight:20,marginLeft:20}}>{props.description}</p>
-    <div style={{borderWidth:5,borderColor:"white",borderStyle:"solid",width:100,color:"white"}}><a class="nav-link" href="#" style={{fontSize:18}}>Voir plus</a></div>
+    <div style={{borderWidth:5,borderColor:"white",borderStyle:"solid",width:100,color:"white"}}><a class="nav-link" href={`${props.redirect}`} style={{fontSize:18}}>Voir plus</a></div>
   </div>
 
     <div style={{flex:0.7,backgroundColor:props.color,borderRadius:20,backgroundImage:`url(${props.uri})`,backgroundSize:400}}>

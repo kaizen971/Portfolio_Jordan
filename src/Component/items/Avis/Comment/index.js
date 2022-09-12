@@ -18,7 +18,7 @@ export default function Cards(props) {
     <div>
     <Stars index={index}/>
     </div>
-    <p id="comment">{`« ${props.comment} »`}</p>
+    <p id="comment" style={{margin:10}}>{`« ${props.comment} »`}</p>
 </div>
 
 

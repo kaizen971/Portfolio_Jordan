@@ -29,9 +29,9 @@ export default function BasicModal() {
   const handleClose = () => setOpen(false);
   return (
     <div>
-      <div class="nav-item active" onClick={handleOpen}> <a class="nav-link" style={{fontSize:25}}>Inscription / Connexion
+      {/* <div class="nav-item active" onClick={handleOpen}> <a class="nav-link" style={{fontSize:25}}>Inscription / Connexion
   <FontAwesomeIcon icon={faUser} style={{marginLeft:20}} />
-  </a></div>
+  </a></div> */}
       <Modal
         open={open}
         onClose={handleClose}
@@ -61,7 +61,7 @@ export default function BasicModal() {
              <input type="text" name="name" />
         </label>
         <div style={{flex:1,backgroundColor:"black",width:"50%",alignSelf:"center",alignItems:"center",marginTop:20}}>
-            <h5 style={{color:"white", textAlign:"center"}}>Connexion</h5>
+            <h5 style={{color:"white", textAlign:"center"}}>BackEnd En cours de publication</h5>
         </div>
         </form>}
         {Connexion === "Inscription" &&<form style={{justifyContent:"center",textAlign:"-webkit-center"}}>
@@ -90,7 +90,7 @@ export default function BasicModal() {
              <input type="text" name="name" />
         </label>
         <div style={{flex:1,backgroundColor:"black",width:"50%",alignSelf:"center",alignItems:"center",marginTop:20}}>
-            <h5 style={{color:"white", textAlign:"center"}}>Inscription</h5>
+            <h5 style={{color:"white", textAlign:"center"}}>BackEnd En cours de publication</h5>
         </div>
         </form>}
         </Box>

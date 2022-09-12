@@ -9,32 +9,20 @@ import Comment from './Comment'
 export default function Avis() {
   var data =[
     {
-      name:"Jordan YERBE",
-      profession:"Stagiaire",
-      comment:"Un élève studieux et respectable",
-      index:2
-
-    },
-    {
       name:"Taye Cimon",
       profession:"3D Designer",
-      comment:"un copain super stylé",
-      index:4
-
-    },
-    {
-      name:"Victor Roussaux",
-      profession:"Directeur The stadium",
-      comment:"un alternant super stylé",
+      comment:"Un développeur très travailleur",
       index:5
 
     },
+    {
+      name:"Quentin Martinez",
+      profession:"Deveoppeur TheStadium",
+      comment:"Jordan s’est montré motivé et professionnel durant toute la durée du contrat. J’ai beaucoup aimé travailler avec lui. Bonne continuation",
+      index:5
 
-
-
-
-
-
+    }
+    
   ]
   const [p, setp] = useState(0);
   const nbr = data.length;

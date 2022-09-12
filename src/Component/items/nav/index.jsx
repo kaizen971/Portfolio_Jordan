@@ -13,16 +13,16 @@ function ListExample() {
   <div class="collapse navbar-collapse" id="navbarNav" style={{flex:0.6,justifyContent:"center"}}>
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#" style={{fontSize:25}} >Présentation</a>
+        <a class="nav-link" href="#Présentation" style={{fontSize:25}} >Présentation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style={{fontSize:25}}>Compétences</a>
+        <a class="nav-link" href="#Compétences" style={{fontSize:25}}>Compétences</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style={{fontSize:25}}>Parcours</a>
+        <a class="nav-link" href="#ContainerParcours" style={{fontSize:25}}>Parcours</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" style={{fontSize:25}}>Avis</a>
+        <a class="nav-link" href="#ContainerComment" style={{fontSize:25}}>Avis</a>
       </li>
     </ul>
   </div>

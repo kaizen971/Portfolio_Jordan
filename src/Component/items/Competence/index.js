@@ -6,7 +6,7 @@ import ReactLogo from '../../../assets/React.png'
 
 export default function Competence() {
   return (
-    <div class="containerCard">
+    <div id="Compétences" class="containerCard">
         <div class="card">
             <div class="face face1">
                 <div class="content">

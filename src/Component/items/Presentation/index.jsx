@@ -49,7 +49,7 @@ export default function Presentation (){
 
   return (
     <section className="banner" id="home">
-      <Container>
+      <Container id="Présentation" >
         <Row className="aligh-items-center">
           <Col xs={12} md={8} xl={7} style={{marginTop:200}}>
             <TrackVisibility>
@@ -58,8 +58,7 @@ export default function Presentation (){
                 <span  style={{color:"white",width:600,height:80}} className="tagline">Bienvenue sur mon Portfolio</span>
                 <h1 style={{color:"white"}}>{`Bonjour! je m'appelle YERBE Jordan`}</h1>
                 <h2  style={{color:"white"}}><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer"]'>{text}</span></h2>
-                  <p>Je suis passioné de l'informatique depuis longtemps, spécialisé dans le developpement d'application et les sites web.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={40} /></button>
+                  <p>Durant mes études, j’ai développé une grande passion pour l’informatique, et je suis fier de dire qu’elle est devenue bien plus que cela. Je suis actuellement à la recherche d’une alternance, pour me permettre de développer mes compétences. J’ai envie de réussir et j’aime apprendre. Je suis impatient de pouvoir m’épanouir dans une nouvelle entreprise.</p>
               </div>}
             </TrackVisibility>
           </Col>

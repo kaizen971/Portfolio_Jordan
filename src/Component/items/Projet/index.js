@@ -15,9 +15,14 @@ import GreenSearcher from '../../../assets/GreenSearcher.png';
 
 
 export default function Projet() {
-  var data = [{ name: "React", iconGauche: "", iconDroit: "", projets: [{ name: "Front sur TheStadium(React Native/ASP.NET)", description: "J'ai réalisé certains écrans pour mon alternance au sein d'une start-up The Stadium. Dans la vidéo de présentation, vous verrez une partie des écrans que j'ai réalisé sur React-Native", lien: theStadium, img: "" }, { name: "Chocolatier-Yams(React/Node.js)", description: "J'ai réalisé un site , pour le biais d'un projet, qui permet à une boulangerie de permettre à ces clients de jouer au jeu Yams et d'essayer de gagner un lot prélever dans le stock de la boulangerie.", lien: Chocolatier, img: "" }, { name: "Eco-search(React Native/MongoDB)", description: "Une application qui utilise une API afin de déterminer la quantité de Co2 produit pour un produit alimentaire lors de sa création.", lien: GreenSearcher, img: "" }],color:'blue' },
-   { name: "Data/Node.js", iconGauche: "", iconDroit: "", projets: [{ name: "Chocolatier-Yams(React/Node.js)", description: "J'ai réalisé un site , pour le biais d'un projet, qui permet à une boulangerie de permettre à ces clients de jouer au jeu Yams et d'essayer de gagner un lot prélever dans le stock de la boulangerie.", lien: Chocolatier, img: "" },{ name: "Blog(PhP/MySql)", description: "Blog permettant de s'inscrire et de se connecter afin de faire publier un message sur un blog.", lien: FAQ, img: "" },{ name: "Note Express (PHP, MySQL)", description: "Ce site web permet de faire des fiches de révisions en lien avec la programation", lien: NoteExpress, img: "" }],color:'green' },
-   {name:"Autres",iconGauche: "", iconDroit: "", projets:[{name:"Isabelle Walk(C#/Unity)", description:"Jeu en c# permettant de passer plusieurs niveau", lien: IsabelleWalk, img: ""}],color:'purple'}]
+  var data = [{ name: "React", iconGauche: "", iconDroit: "", projets: [{ 
+    name: "Front sur TheStadium(React Native/ASP.NET)", description: "Une application qui partage en direct les matchs de Bretagne en France. Pendant mon alternance, j'ai du réalisé certains de ces écrans.", lien: theStadium, redirect: "http://thestadium.fr/" }, 
+   { name: "Chocolatier-Yams(React/Node.js)", description: "J'ai réalisé un site , pour le biais d'un projet, qui permet à une boulangerie de permettre à ces clients de jouer au jeu Yams et d'essayer de gagner un lot directement prélever dans le stock de la boulangerie.", lien: Chocolatier, redirect: "https://github.com/kaizen971/yamschocolatier" }, 
+   { name: "Eco-search(React Native/MongoDB)", description: "Une application qui utilise une API Agribalyse afin de déterminer la quantité de Co2 produit pour un produit alimentaire lors de sa création.", lien: GreenSearcher, redirect: "https://github.com/kaizen971/" }],color:'blue' },
+   { name: "Data/Node.js", iconGauche: "", iconDroit: "", projets: [{ name: "Chocolatier-Yams(React/Node.js)", description: "J'ai réalisé un site , pour le biais d'un projet, qui permet à une boulangerie de permettre à ces clients de jouer au jeu Yams et d'essayer de gagner un lot prélever dans le stock de la boulangerie.", lien: Chocolatier, redirect: "https://github.com/kaizen971/ChocolatierBack" },
+   { name: "FAQ-Environnement(PhP/MySql)", description: "Blog permettant de s'inscrire et de se connecter afin de faire publier un message sur un blog en lien avec l'environnement.", lien: FAQ, redirect: "https://github.com/kaizen971/FAQ-Environnement" },
+   { name: "Note Express (PHP, MySQL)", description: "Ce site web permet de faire des fiches de révisions et prendre des notes en lien avec la programation", lien: NoteExpress, redirect: "https://vimeo.com/588445307" }],color:'green' },
+   {name:"Autres",iconGauche: "", iconDroit: "", projets:[{name:"Isabelle Walk(C#/Unity)", description:"Jeu en c# permettant de passer plusieurs niveau", lien: IsabelleWalk, redirect: "https://vimeo.com/588481430"}],color:'purple'}]
   const [p, setp] = useState(0);
   const nbr = 3
   const switchsRight = () => {
@@ -104,12 +109,12 @@ export default function Projet() {
             <div id="containerCard" style={{ width: 800 * nbr }}>
            <div style={{ display: "flex", flexDirection: "column" }}>
               <div style={{ display: "flex", flexDirection: "row" ,justifyContent:"center"}}>
-              {item.projets[0] &&<div class='comment'> <ProjectItems name={item.projets[0].name} description={item.projets[0].description} uri={item.projets[0].lien} index={2} color={item.color}/></div>}
-              {item.projets[1] &&<div class='comment'> <ProjectItems name={item.projets[1].name} description={item.projets[1].description} uri={item.projets[1].lien} index={2} color={item.color}/></div>}
+              {item.projets[0] &&<div class='comment'> <ProjectItems name={item.projets[0].name} description={item.projets[0].description} uri={item.projets[0].lien} redirect={item.projets[0].redirect} index={2} color={item.color}/></div>}
+              {item.projets[1] &&<div class='comment'> <ProjectItems name={item.projets[1].name} description={item.projets[1].description} uri={item.projets[1].lien} redirect={item.projets[1].redirect} index={2} color={item.color}/></div>}
               </div>
               <div style={{ display: "flex", flexDirection: "row" ,justifyContent:"center"}}>
-              {item.projets[1] &&<div class='comment'> <ProjectItems name={item.projets[2].name} description={item.projets[2].description} uri={item.projets[2].lien} index={2} color={item.color}/></div>}
-              {item.projets[3] &&<div class='comment'> <ProjectItems name={item.projets[3].name} description={item.projets[3].description} uri={item.projets[3].lien} index={2} color={item.color}/></div>}
+              {item.projets[1] &&<div class='comment'> <ProjectItems name={item.projets[2].name} description={item.projets[2].description} uri={item.projets[2].lien} redirect={item.projets[2].redirect} index={2} color={item.color}/></div>}
+              {item.projets[3] &&<div class='comment'> <ProjectItems name={item.projets[3].name} description={item.projets[3].description} uri={item.projets[3].lien} redirect={item.projets[3].redirect} index={2} color={item.color}/></div>}
               </div>
             </div>
             </div>

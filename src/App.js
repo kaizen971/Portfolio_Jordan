@@ -19,8 +19,8 @@ function App() {
     <div className="App">
         <BasicExample/>
         <Presentation />
-        <Separators name={"Compétences"} image={bluePlanet} />
-        <Competence/>
+        <Separators  name={"Compétences"} image={bluePlanet} />
+        <Competence />
         <Separators name={"Parcours"} image={orangePlanet}/>
         <Parcours />
         <Separators name={"Projet"} image={purplePlanete}/>
