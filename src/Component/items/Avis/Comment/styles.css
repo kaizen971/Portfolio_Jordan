@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+
+
+
+#containerComment{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	border-radius: 5px;
+	width: 400px;
+	height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#containerComment h1{
+color:rgb(153, 152, 152);
+display:flex;
+justify-content:center;
+flex:0.2
+}
+
+#containerComment h3{
+    color:rgb(59, 59, 59);
+    display:flex;
+    justify-content:center;
+    flex:0.2
+}
+#containerComment div{
+    display:flex;
+    justify-content:center;
+    flex:0.1;
+    align-items: center;
+
+}
+#containerComment p{
+    display:flex;
+    justify-content:center;
+    flex:0.5;
+    align-items: center;
+    font-style: italic;
+  
+}
+
+
